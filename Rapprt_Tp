@@ -1,1 +1,40 @@
+               Tp1:Exercices introductifs avec Matlab Décomposition en série de Fourier
+
+Manipulation1:
+ Le code:
+ 
+clear all
+close all
+clc
+
+t = 1:0.01:2;
+A0=2*cos(2*pi*2*t);
+A1= 7*cos(2*pi*4*t);
+A2=0.5*cos(2*pi*6*t);
+sig=A0+A1+A2;
+
+subplot(2,2,1);
+plot(t,A0,'k');
+title('Representation de signal sinusoidale avec A0 et f0');
+xlabel('t');
+
+subplot(2,2,2);
+plot(t,A1,'r');
+title('Representation de signal sinusoidale avec A1 et f1');
+xlabel('t');
+
+subplot(2,2,3);
+plot(t,A2,'g');
+title('Representation de signal sinusoidale avec A2 et f2');
+xlabel('t');
+
+subplot(2,2,4);
+plot(t,sig);
+title('Representation de signal sig');
+xlabel('t');
+
+ Explication:
+
+    La visualisation:
+
 
